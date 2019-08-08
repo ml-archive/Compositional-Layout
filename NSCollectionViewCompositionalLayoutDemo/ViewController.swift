@@ -39,7 +39,14 @@ class ViewController: UIViewController {
         collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
-        collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
+        collectionView.register(CollectionViewCell.self,
+                                forCellWithReuseIdentifier: "CollectionViewCell")
+        collectionView.register(BadgeSupplementaryView.self,
+                                forSupplementaryViewOfKind: "badge",
+                                withReuseIdentifier: "BadgeSupplementaryView")
+        collectionView.register(HeaderSupplementaryView.self,
+                                forSupplementaryViewOfKind: "header",
+                                withReuseIdentifier: "HeaderSupplementaryView")
     }
     
     private func makeLayout() -> UICollectionViewLayout {
@@ -66,4 +73,25 @@ extension ViewController: UICollectionViewDataSource {
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case "header":
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                             withReuseIdentifier: "HeaderSupplementaryView",
+                                                                             for: indexPath) as! HeaderSupplementaryView
+            headerView.label.text = "This is a header"
+            
+            return headerView
+        case "badge":
+            let badgeView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                            withReuseIdentifier: "BadgeSupplementaryView",
+                                                                            for: indexPath) as! BadgeSupplementaryView
+            badgeView.label.text = indexPath.section.description
+            
+            return badgeView
+        default:
+            print(kind)
+            return UICollectionReusableView()
+        }
+    }
 }
