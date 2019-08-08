@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4258F8C822FC1D300093FE6B /* BadgeSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4258F8C722FC1D300093FE6B /* BadgeSupplementaryView.swift */; };
+		4258F8CA22FC4DD70093FE6B /* HeaderSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4258F8C922FC4DD70093FE6B /* HeaderSupplementaryView.swift */; };
 		42B40F1B22F0822000C9E4F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B40F1A22F0822000C9E4F7 /* AppDelegate.swift */; };
 		42B40F1D22F0822000C9E4F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B40F1C22F0822000C9E4F7 /* SceneDelegate.swift */; };
 		42B40F1F22F0822000C9E4F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B40F1E22F0822000C9E4F7 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		4258F8C722FC1D300093FE6B /* BadgeSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSupplementaryView.swift; sourceTree = "<group>"; };
+		4258F8C922FC4DD70093FE6B /* HeaderSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSupplementaryView.swift; sourceTree = "<group>"; };
 		42B40F1722F0822000C9E4F7 /* NSCollectionViewCompositionalLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCollectionViewCompositionalLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B40F1A22F0822000C9E4F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B40F1C22F0822000C9E4F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				4258F8C722FC1D300093FE6B /* BadgeSupplementaryView.swift */,
+				4258F8C922FC4DD70093FE6B /* HeaderSupplementaryView.swift */,
 			);
 			path = "Supplementary Views";
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				42B40F1B22F0822000C9E4F7 /* AppDelegate.swift in Sources */,
 				42C3C1C522FABF5000582CC1 /* CollectionViewCell.swift in Sources */,
 				42B40F1D22F0822000C9E4F7 /* SceneDelegate.swift in Sources */,
+				4258F8CA22FC4DD70093FE6B /* HeaderSupplementaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

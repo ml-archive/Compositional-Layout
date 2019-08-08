@@ -1,5 +1,5 @@
 //
-//  BadgeSupplementaryView.swift
+//  HeaderSupplementaryView.swift
 //  NSCollectionViewCompositionalLayoutDemo
 //
 //  Created by Andrei Hogea on 08/08/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BadgeSupplementaryView: UICollectionReusableView {
+class HeaderSupplementaryView: UICollectionReusableView {
 
     let label = UILabel()
 
@@ -16,9 +16,9 @@ class BadgeSupplementaryView: UICollectionReusableView {
         super.init(frame: frame)
         
         label.textAlignment = .center
-        label.textColor = .white
-        backgroundColor = .red
-        label.font = UIFont.preferredFont(forTextStyle: .footnote)
+        label.textColor = .black
+        backgroundColor = .white
+        label.font = UIFont.preferredFont(forTextStyle: .headline)
         addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
@@ -27,12 +27,5 @@ class BadgeSupplementaryView: UICollectionReusableView {
 
     required init?(coder: NSCoder) {
         fatalError("Not implemented")
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        layer.cornerRadius = frame.height/2
-        layer.masksToBounds = true
     }
 }
