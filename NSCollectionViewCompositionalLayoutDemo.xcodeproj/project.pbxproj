@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4258F8C822FC1D300093FE6B /* BadgeSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4258F8C722FC1D300093FE6B /* BadgeSupplementaryView.swift */; };
 		42B40F1B22F0822000C9E4F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B40F1A22F0822000C9E4F7 /* AppDelegate.swift */; };
 		42B40F1D22F0822000C9E4F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B40F1C22F0822000C9E4F7 /* SceneDelegate.swift */; };
 		42B40F1F22F0822000C9E4F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B40F1E22F0822000C9E4F7 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4258F8C722FC1D300093FE6B /* BadgeSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSupplementaryView.swift; sourceTree = "<group>"; };
 		42B40F1722F0822000C9E4F7 /* NSCollectionViewCompositionalLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCollectionViewCompositionalLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B40F1A22F0822000C9E4F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B40F1C22F0822000C9E4F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4258F8C622FC1D190093FE6B /* Supplementary Views */ = {
+			isa = PBXGroup;
+			children = (
+				4258F8C722FC1D300093FE6B /* BadgeSupplementaryView.swift */,
+			);
+			path = "Supplementary Views";
+			sourceTree = "<group>";
+		};
 		42B40F0E22F0822000C9E4F7 = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +68,8 @@
 		42B40F1922F0822000C9E4F7 /* NSCollectionViewCompositionalLayoutDemo */ = {
 			isa = PBXGroup;
 			children = (
-				42C3C1C322FABF4000582CC1 /* CollectionViewCell */,
+				4258F8C622FC1D190093FE6B /* Supplementary Views */,
+				42C3C1C322FABF4000582CC1 /* Cells */,
 				42B40F1A22F0822000C9E4F7 /* AppDelegate.swift */,
 				42B40F1C22F0822000C9E4F7 /* SceneDelegate.swift */,
 				42B40F1E22F0822000C9E4F7 /* ViewController.swift */,
@@ -70,12 +81,12 @@
 			path = NSCollectionViewCompositionalLayoutDemo;
 			sourceTree = "<group>";
 		};
-		42C3C1C322FABF4000582CC1 /* CollectionViewCell */ = {
+		42C3C1C322FABF4000582CC1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				42C3C1C422FABF5000582CC1 /* CollectionViewCell.swift */,
 			);
-			path = CollectionViewCell;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4258F8C822FC1D300093FE6B /* BadgeSupplementaryView.swift in Sources */,
 				42B40F1F22F0822000C9E4F7 /* ViewController.swift in Sources */,
 				42B40F1B22F0822000C9E4F7 /* AppDelegate.swift in Sources */,
 				42C3C1C522FABF5000582CC1 /* CollectionViewCell.swift in Sources */,
